@@ -1,0 +1,128 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Phan quyen db",
+    "collectionId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+    "dateExported": "2024-09-05T06:52:34.458Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6f4f9f4e-eb16-44ac-97a4-22603143b412",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "add permission",
+            "url": "{{baseUrl}}/admin/query?roleName=ROLE_USER&permission=TODO_GET",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-08-09T14:24:09.592Z",
+            "modified": "2024-09-05T06:51:14.253Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "roleName",
+                    "value": "ROLE_USER",
+                    "isPath": false
+                },
+                {
+                    "name": "permission",
+                    "value": "TODO_GET",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "bc748431-7a44-4c43-bce2-7b554bfe7ae0",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "login",
+            "url": "{{baseUrl}}/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-09T14:26:17.985Z",
+            "modified": "2024-09-05T06:51:26.432Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"hoainam10th\",\n  \"password\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": [
+                {
+                    "type": "set-env-var",
+                    "custom": "json.token",
+                    "action": "setto",
+                    "value": "{{token}}"
+                }
+            ]
+        },
+        {
+            "_id": "cd6b0fb8-d81e-4cad-88a9-0e5b4dbb05af",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "todo create",
+            "url": "{{baseUrl}}/todos/1",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-08-10T00:26:28.316Z",
+            "modified": "2024-08-11T00:27:08.789Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "db1343e2-7e4a-4750-96e8-ccf95cdfe672",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "to do update",
+            "url": "{{baseUrl}}/todos/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-08-11T00:17:44.630Z",
+            "modified": "2024-08-11T00:17:58.556Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "eadd52ed-cf20-4eba-a986-5059e58689e2",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "todo delete",
+            "url": "{{baseUrl}}/todos/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-11T00:28:30.189Z",
+            "modified": "2024-08-11T00:28:38.666Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        },
+        {
+            "_id": "22f091e4-445e-4a1c-b551-c5df3804ef74",
+            "colId": "ab957fa6-0eb1-4d60-929e-395642fd4318",
+            "containerId": "",
+            "name": "get todo",
+            "url": "{{baseUrl}}/todos/1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-09-05T06:41:29.428Z",
+            "modified": "2024-09-05T06:47:47.718Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "{{token}}"
+            }
+        }
+    ],
+    "ref": "dGgLfGX8O9aAfg1SNis0Z8D93v5hv9Qk4SgPcWI6cfREL_rzWMxWcq88XbAJej-YWi2XQbjXAiCB59HSsn7taw"
+}
